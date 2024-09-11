@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- background ,body properties -->
+  <div class="flex items-center justify-center h-full">
+    <div class="bg-opacity-50 rounded-lg p-8 shadow-lg max-w-md w-full">
+      <h2 class="text-2xl font-semibold text-center mb-6">Login Page</h2>
+      <!--username properties -->
+      <form>
+        <div class="mb-4">
+          <label class="block">Username</label>
+          <input type="text" placeholder="Username" class="w-full p-2 mt-2 border rounded-md >
+        </div>
+
+        <!-- password properties with show password  -->
+        <div class="mb-4 relative">
+          <label class="block">Password</label>
+          <input id="password" type="password" placeholder="Password" class="w-full p-2 mt-2 border rounded-md ">
+          <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 p-2"></button>
+        </div>
+
+        <!-- Spinner -->
+        <div id="spinner" class="hidden flex justify-center items-center mt-4">
+          <svg class="animate-spin h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.978 7.978 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+        </div>
+        <!-- forget password and remember me properties -->
+        <div class="flex justify-between items-center mb-6">
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox text-blue-500 h-4 w-4">
+            <span class="ml-2">Remember Me</span>
+          </label>
+          <a href="#" class="text-blue-500 hover:underline">Forgot Password?</a>
+        </div>
+        <button class="w-full bg-red-400 text-white py-2 rounded-md hover:bg-red-600 transition duration-200">SIGN IN</button>
+        <div class="text-center mt-4">— Or Sign In With —</div>
+        <div class="flex justify-center space-x-4 mt-4">
+
+
+          <!-- Google Login Button -->
+          <div class="social-button">
+            <a href="https://accounts.google.com/signin" target="_blank">
+              <img src="images/google.png" alt="Google" class="w-8 h-8">
+              <div class="name"></div>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

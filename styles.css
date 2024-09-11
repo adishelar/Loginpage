@@ -1,0 +1,140 @@
+body {
+    background-image: url('images/Background.PNG');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .bg-opacity-50 {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .text-Black-1000 {
+    color: #000;
+  }
+  
+  .text-blue-500 {
+    color: #3498db;
+  }
+  
+  .form-checkbox {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 0.5em 0 0;
+  }
+  
+  .social-button {
+    display: inline-block;
+    margin: 0 0.5em;
+  }
+  
+  .social-button img {
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .social-button .name {
+    font-size: 1.2em;
+    margin-left: 0.5em;
+    vertical-align: middle;
+  }
+  
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+
+  #spinner {
+    display: none;
+  }
+  
+  #spinner svg {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    body {
+        background-size: cover; 
+    }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+}
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 769px) {
+    body {
+        background-size: cover;
+    }
+}
+  
+ 
+  
+/* small mobile devices */
+@media only screen and (max-width: 320px) {
+    body {
+      background-image: none;
+      background-color: #f2f2f2;
+    }
+    .bg-opacity-50 {
+      background-color: #fff;
+    }
+    h2 {
+      font-size: 0.8em;
+    }
+    label {
+      font-size: 0.5em;
+    }
+    input[type="text"], input[type="password"] {
+      padding: 0.1em;
+    }
+    button[type="button"] {
+      padding: 0
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;  
+        background-image: url('images/Background.PNG');
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: cover;  
+        background-image: url('images/Background.PNG');
+    }
+}
